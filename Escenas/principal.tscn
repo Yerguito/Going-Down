@@ -18,5 +18,5 @@ position = Vector2(52.809, 324.6)
 scale = Vector2(1, 1)
 
 [node name="personaje" parent="." instance=ExtResource("2_lppth")]
-position = Vector2(242, 108)
+position = Vector2(351, 108)
 script = ExtResource("3_8l6v5")
