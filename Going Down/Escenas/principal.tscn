@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1j7c1xfqk0il"]
+
+[ext_resource type="PackedScene" uid="uid://ctghlp7e7pqql" path="res://Escenas/pared.tscn" id="1_c2m65"]
+[ext_resource type="PackedScene" uid="uid://0e3k0tglwqfm" path="res://Escenas/personaje.tscn" id="2_lppth"]
+[ext_resource type="Script" path="res://scripts/personaje.gd" id="3_8l6v5"]
+
+[node name="Principal" type="Node2D"]
+
+[node name="paredes" type="Node2D" parent="."]
+scale = Vector2(0.89, 10)
+
+[node name="pared-1" parent="paredes" instance=ExtResource("1_c2m65")]
+position = Vector2(766.292, 324.1)
+scale = Vector2(1, 1)
+
+[node name="pared-2" parent="paredes" instance=ExtResource("1_c2m65")]
+position = Vector2(52.809, 324.6)
+scale = Vector2(1, 1)
+
+[node name="personaje" parent="." instance=ExtResource("2_lppth")]
+position = Vector2(242, 108)
+script = ExtResource("3_8l6v5")

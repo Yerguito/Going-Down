@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctghlp7e7pqql"]
+
+[ext_resource type="Texture2D" uid="uid://c7iejesmb2ob4" path="res://sprites/New Piskel (8).png" id="1_mtwwy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jls7x"]
+size = Vector2(96, 647)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(0, 577)
+scale = Vector2(0.642561, 7.61617)
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5.15625, 20.3438)
+texture = ExtResource("1_mtwwy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.11254, -1.31299)
+shape = SubResource("RectangleShape2D_jls7x")
