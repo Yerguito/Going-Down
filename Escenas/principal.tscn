@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1j7c1xfqk0il"]
+[gd_scene load_steps=5 format=3 uid="uid://c1j7c1xfqk0il"]
 
 [ext_resource type="PackedScene" uid="uid://ctghlp7e7pqql" path="res://Escenas/pared.tscn" id="1_c2m65"]
 [ext_resource type="PackedScene" uid="uid://0e3k0tglwqfm" path="res://Escenas/personaje.tscn" id="2_lppth"]
 [ext_resource type="Script" path="res://scripts/personaje.gd" id="3_8l6v5"]
+[ext_resource type="Script" path="res://Escenas/camera_2d.gd" id="4_y3x7q"]
 
 [node name="Principal" type="Node2D"]
 
@@ -18,5 +19,9 @@ position = Vector2(52.809, 324.6)
 scale = Vector2(1, 1)
 
 [node name="personaje" parent="." instance=ExtResource("2_lppth")]
-position = Vector2(351, 108)
+position = Vector2(361, 108)
 script = ExtResource("3_8l6v5")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(360, 636)
+script = ExtResource("4_y3x7q")
